@@ -6,15 +6,12 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         fontFamily: 'Montserrat-Black',
         backgroundColor: '#262F38',
-        borderBottomWidth: 1,
-        borderColor: '#0193d8',
-        //
-        width:100,
-        
+        height:70      
     },
     text: {
         color: '#FEFFFF',
-        fontSize: 20 
+        fontSize: 20,
+        top: 8
     }
 })
 
@@ -23,6 +20,7 @@ const icons = StyleSheet.create({
         marginHorizontal: 20,
         fontSize: 20,
         color: '#FEFFFF',
+        top: 10
     }
 })
 
