@@ -4,14 +4,14 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        fontFamily: 'Montserrat-Black',
         backgroundColor: '#262F38',
         height:70      
     },
     text: {
         color: '#FEFFFF',
         fontSize: 20,
-        top: 8
+        top: 8,
+        fontFamily: 'Montserrat-Medium',
     }
 })
 

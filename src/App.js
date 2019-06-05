@@ -5,20 +5,18 @@ import data from '../assets/data.json';
 
 import Header from './Components/Header';
 import Filters from './Components/Filters';
+import Exercises from './Components/Exercises';
 
 export default class App extends Component {
-  state = {
-    filter: ''
-  }
 
   render() {
-    console.log(data.filters)
     return (
       <View styles={styles.container}>
         <Header />
         <View style={{borderBottomWidth: 1, borderColor: '#fff', marginHorizontal: 10}}>
         </View>
         <Filters filtersProps={data.filters} />
+        <Exercises exercicesProps={data.exercices} />
       </View>
         
     );
