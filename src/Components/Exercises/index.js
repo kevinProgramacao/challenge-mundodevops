@@ -1,17 +1,26 @@
 import React from 'react';
-import { View, Image, Text, ScrollView } from 'react-native';
+import { View, Image, Text, ScrollView, Dimensions } from 'react-native';
 import { styles } from './styles';
+const { height } = Dimensions.get('window');
 
-const Exercises = ({ exercicesProps }) => (
-    <ScrollView>
+const Exercises = ( {exercicesProps, imagesProps} ) => (
         <View style={styles.container}>
+            <ScrollView contentContainerStyle={{height: height+260}}>
             {
                 exercicesProps.map((exercice, index) => (
                     <View style={styles.card} key={index}>
                         <View style={styles.circle}>
                             <Image 
-                                source={require('../../../assets/img/running.png')}
-                                style={styles.imageExercise}
+                                source={imagesProps[index]}
+                                style={
+                                    [styles.imageExercise,
+                                    exercice.name === 'Bicicleta' 
+                                    ? 
+                                    {right: 25}
+                                    :
+                                    null
+                                    ]
+                                }
                             />
                         </View>
                         <View style={{left: 30}}>
@@ -42,18 +51,18 @@ const Exercises = ({ exercicesProps }) => (
 
                             <View style={{flexDirection: 'row', top: 20, right: 7}}>
                                 <View style={exercice.when === 'today' ? styles.buttonToday : styles.button}>
-                                    <Text style={[styles.textNumbers,{textAlign: 'center', color: '#fff'}]}>HOJE</Text>
+                                    <Text style={[styles.textNumbers,{textAlign: 'center', color: '#a9adb1'}]}>HOJE</Text>
                                 </View>
                                 <View style={exercice.when === 'yesterday' ? styles.buttonYesterday : styles.button} >
-                                    <Text style={[styles.textNumbers, {textAlign: 'center', color: '#fff'}]}>ONTEM</Text>
+                                    <Text style={[styles.textNumbers, {textAlign: 'center', color: '#a9adb1'}]}>ONTEM</Text>
                                 </View>
                             </View>
                         </View>     
                     </View>
                 ))
             }
+            </ScrollView>
         </View>
-    </ScrollView>
     
 )
 

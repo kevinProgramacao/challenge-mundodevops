@@ -1,6 +1,17 @@
 # Mundo Dev Ops Challenge
 
-> React Native App developed first to use in android OS.
+> React Native App developed first to use in android OS, you can click on filters circles to add check icon and remove.
+
+## Hours expended
+
+6 hours
+
+## Dependencies
+
+react-native-vector-icons
+
+react-native-linear-gradient
+
 ## Quick Start
 
 Check the Getting Started on react native oficial doc https://facebook.github.io/react-native/docs/0.59/getting-started

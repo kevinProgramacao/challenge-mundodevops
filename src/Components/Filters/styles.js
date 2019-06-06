@@ -1,4 +1,5 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+const width = Math.round(Dimensions.get('window').width);
 
 const styles = StyleSheet.create({
     container: {
@@ -35,6 +36,13 @@ const styles = StyleSheet.create({
     iconCheck:{
         color: '#19B996',
         fontSize: 18
+    },
+    imageUpperLower: {
+        left: 9, 
+        top: 10
+    },
+    lineHorizontal: {
+        borderColor: '#707070', borderBottomWidth: 1,  marginHorizontal: 15,
     }
 })
 

@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         color: '#FEFFFF',
         fontSize: 20,
         top: 8,
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Montserrat-Light',
     }
 })
 

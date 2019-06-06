@@ -1,10 +1,9 @@
 import { StyleSheet, Dimensions } from 'react-native';
-const height = Math.round(Dimensions.get('window').height);  
+const { height } = Dimensions.get('window');  
 
 const styles = StyleSheet.create({
     container: {
         backgroundColor: '#262F38',
-        height: height,
         fontFamily: 'Montserrat-Medium'
     },
     card: {
@@ -32,7 +31,7 @@ const styles = StyleSheet.create({
     },
     verticalLine: {
         borderLeftWidth: 1,
-        borderLeftColor: '#262F38',
+        borderLeftColor: '#515962',
         marginHorizontal: 5
     },
     textNumbers: {
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
         height: 22,
         borderRadius:100,
         borderWidth: 1,
-        borderColor: '#262F38',
+        borderColor: '#515962',
         marginHorizontal: 5,
         backgroundColor: "#323C47"
     },
